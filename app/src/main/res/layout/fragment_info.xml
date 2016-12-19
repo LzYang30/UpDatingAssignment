@@ -1,0 +1,196 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.lz_yang.updatingassignment.FragmentInfo">
+
+    <ScrollView
+        android:background="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/yoona1"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/imageViewProfilePicture"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:text="YoonA , 23"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/textViewShowNameAndAge"
+                    android:layout_weight="1" />
+                <TextView
+                    android:text="RSF2 , 2015"
+                    android:textColor="#818181"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/textViewShowCourseAndYear"
+                    android:layout_weight="1" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="#808080"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:text="Interest"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/textViewInterest"
+                    android:layout_centerInParent="true" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="#818181"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="Song"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/textViewSong"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Selected Song"
+                        android:textColor="#838383"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:id="@+id/textViewSelectedSong"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="Sport"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/textViewSport"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Selected Sport"
+                        android:textColor="#838383"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:id="@+id/textViewSelectedSport"
+                        android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:text="Food"
+                        android:textColor="@android:color/background_dark"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/textViewFood"
+                        android:layout_weight="1" />
+                    <TextView
+                        android:text="Selected Food"
+                        android:textColor="#838383"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:id="@+id/textViewSelectedFood"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="vertical">
+                <TextView
+                    android:text="Birthday"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="bottom"
+                    android:id="@+id/textViewBirthday"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#838383"
+                    android:text="30 - 05 - 1990"
+                    android:layout_marginLeft="20dp"
+                    android:gravity="center_vertical"
+                    android:id="@+id/textViewShowBirthday"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1sp"
+                    android:background="#808080"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
